@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updateRecipe">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".updateRecipe">
+
+        <TextView
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Update recipe"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textFontWeight="@android:integer/config_longAnimTime"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/txtRecipeName"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Name:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15"/>
+
+        <EditText
+            android:id="@+id/updateRecipeName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Name"
+            android:inputType=""
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRecipeIngredients"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Ingredients:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"/>
+
+        <EditText
+            android:id="@+id/updateRecipeIngredients"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Ingredients"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRecipeMethod"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Method Title:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35"/>
+
+        <EditText
+            android:id="@+id/updateRecipeMethodTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Method Title"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRecipeDescription"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Description:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"/>
+
+        <EditText
+            android:id="@+id/updateRecipeDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="221dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Description"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRecipeImage"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Image:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.55"/>
+
+        <EditText
+            android:id="@+id/updateRecipeThumbnail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="number"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="260dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Image"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtRecipeTime"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Recipe Time:"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.65"/>
+
+        <EditText
+            android:id="@+id/updateRecipeTimeToMake"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="16dp"
+            android:hint="Recipe Time"
+            android:selectAllOnFocus="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnUpdateRecipe"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Update Recipe"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.20"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"/>
+
+
+        <EditText
+            android:id="@+id/updateRecipeId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="24dp"
+            android:hint="Recipe ID"
+            android:selectAllOnFocus="true"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnShowFields"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:text="Get Your Recipe"
+            android:layout_marginTop="2dp"
+            tools:ignore="MissingConstraints"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

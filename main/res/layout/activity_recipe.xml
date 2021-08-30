@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeDetails">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/text_recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/recipeName"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                />
+
+            <ImageView
+                android:id="@+id/recipe_img_id"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/cardview_dark_background"
+                android:scaleType="centerCrop"
+                />
+
+            <TextView
+                android:id="@+id/ingredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="18dp"
+                android:textSize="20sp"
+                android:text="@string/ingredients"
+
+                />
+            <TextView
+                android:id="@+id/method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/recipeName"
+                android:textSize="21sp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/recipe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_margin="18dp"
+                android:textSize="20sp"
+                android:text="@string/ingredients"
+
+                />
+
+            <Button
+                android:id="@+id/btnLikeButton"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:text="Like"
+                tools:ignore="MissingConstraints"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                 />
+
+            <TextView
+                android:id="@+id/totalLikes"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:text=" 0 "
+                tools:ignore="MissingConstraints"
+                android:textSize="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_marginStart="24dp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
